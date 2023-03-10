@@ -19,6 +19,7 @@ https://github.com/antfu/unplugin-icons
 npm i -D unplugin-icons
 ```
 ```
+const path = require('path')
 const Icons = require('unplugin-icons/webpack');
 const { FileSystemIconLoader } = require('unplugin-icons/loaders');
 module.exports = {
@@ -34,6 +35,22 @@ module.exports = {
         })
     ]
   }
+}
+```
+## 也可以通过hfex-icon-plugin 配置，hfex-icon-plugin是将以上plugin上的配置封装起来
+## Install
+```
+npm i hfex-icon-plugin
+```
+## 在vue.config.js/vue.config.ts的plugins中配置
+```
+const HfexIconPlugin = require('hfex-icon-plugin')
+module.exports = {
+    configureWebpack:{
+        plugins:[
+            ...HfexIconPlugin.plugins
+        ]
+    }
 }
 ```
 ## 在vue入口文件引入注册组件
