@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "declaration": true,
+        "composite": true,
+        // "declarationMap": false,
+        "declarationDir": "./dist/typings",
+        "sourceMap": false,
+        "outDir": "./dist",
+        "strict": true,
+        "noImplicitAny": false,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "typeRoots": [
+            "./typings"
+        ],
+        "rootDir": "./src/",
+    },
+    "include": [
+        "src/**/**.ts"
+, "src/index.js"    ]
+}
