@@ -12,7 +12,7 @@ npm i -D hfex-icon
 https://github.com/antfu/unplugin-icons
 ## 兼容vue2和vue3 
 
-## 在vue.config.js/vue.config.ts的plugins中配置
+## 在vue.config.js的plugins中配置
 ## Install unplugin-icons
 
 ```
@@ -42,7 +42,7 @@ module.exports = {
 ```
 npm i hfex-icon-plugin
 ```
-## 在vue.config.js/vue.config.ts的plugins中配置
+## 在vue.config.js的plugins中配置
 ```
 const HfexIconPlugin = require('hfex-icon-plugin')
 module.exports = {
@@ -86,7 +86,7 @@ npm install -D unocss
 ```
 import 'uno.css'
 ```
-## 在vue.config.js/vue.config.ts的plugins中配置
+## 在vue.config.js的plugins中配置
 
 ```
 const UnoCSS = require('@unocss/webpack').default
