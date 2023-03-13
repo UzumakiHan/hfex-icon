@@ -64,7 +64,7 @@ Vue.use(MfexIcon); //vue2
 ```
 <hfex-icon name="home" color="#999" size="80px"/>
 ```
-效果展示
+## 效果展示
 ![Image text](https://raw.githubusercontent.com/UzumakiHan/static-files/master/images/hfex-icon-show.png)
 
 
