@@ -75,4 +75,52 @@ Vue.use(MfexIcon); //vue2
 |   color   |  string  |    #000    |
 
 
+## 方式二
+## 配合unocss使用
 
+## Install unocss
+```
+npm install -D unocss
+```
+## 在vue入口文件引入
+```
+import 'uno.css'
+```
+## 在vue.config.js/vue.config.ts的plugins中配置
+
+```
+const UnoCSS = require('@unocss/webpack').default
+const presetIcons = require('unocss').presetIcons
+const presetUno = require('unocss').presetUno
+const presetAttributify = require('unocss').presetAttributify
+
+module.exports = {
+  configureWebpack:{
+    plugins:[
+      UnoCSS({
+        presets: [
+          presetUno(),
+          presetAttributify(),
+          presetIcons({
+            collections: {
+              'hfex-icon': () => require('hfex-icon/iconify-json/hfex-icon.json')
+            }
+          })
+        ]
+      }),
+    ]
+  }
+}
+```
+## 使用
+```
+<div class="i-hfex-icon:message w-80px h-80px bg-#cde6c7"></div>
+<div class="i-hfex-icon:delete w-80px h-80px bg-#994405"></div>
+<div class="i-hfex-icon:share w-80px h-80px bg-#cde6c7"></div>
+```
+
+## 效果展示
+![Image text](https://raw.githubusercontent.com/UzumakiHan/static-files/master/images/unocss-show.png)
+
+## 图标支持
+![Image text](https://raw.githubusercontent.com/UzumakiHan/static-files/master/images/icon-support.png)
