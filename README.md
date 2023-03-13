@@ -67,7 +67,7 @@ Vue.use(MfexIcon); //vue2
 ## 效果展示
 ![Image text](https://raw.githubusercontent.com/UzumakiHan/static-files/master/images/hfex-icon-show.png)
 
-
+## 参数支持
 |   参数    |    类型  |  默认值     |
 | :-------: | :------: | :--------: |
 |   name    |  string  |    home    |
