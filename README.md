@@ -40,7 +40,7 @@ module.exports = {
 ## 也可以通过hfex-icon-plugin 配置，hfex-icon-plugin是将以上plugin上的配置封装起来
 ## Install
 ```
-npm i hfex-icon-plugin
+npm i hfex-icon-plugin -D
 ```
 ## 在vue.config.js的plugins中配置
 ```
